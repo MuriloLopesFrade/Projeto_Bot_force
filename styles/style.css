@@ -26,9 +26,41 @@ a {
 }
 
 .conteiner {
+
     width: 100%;
     height: 100vh;
     background-color: var(--cor-fundo);
+}
+
+.conteiner-boasVindas{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 90vh; 
+}
+
+.conteiner-formatacao {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh; 
+}
+
+.conteiner-formatacao-conteudo{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    gap: 5%;
+}
+
+.conteiner-formatacao-texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-formatacao-galeria{
+    display: flex;
+    align-content: stretch;
 }
 
 .titulo{
@@ -60,4 +92,10 @@ a {
 .header-page ul {
     display: flex;
     gap: 20px;
+}
+
+.foto-galeria{
+    width: 533px;
+    height: 310px;
+    border-radius: 10px;
 }
