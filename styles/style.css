@@ -2,7 +2,9 @@
     --cor-fundo: #1E1E1E;
     --cor-barra-navegacao: #555658;
     --cor-texto: #B8BFC6;
-    --cor-fenix: #FA065E
+    --cor-fenix: #FA065E;
+
+    --distancia-foto-galeria: 40px;
 }
 
 * {
@@ -37,6 +39,8 @@ a {
 .header-page ul {
     display: flex;
     gap: 20px;
+    font-size: 28px;
+    font-family: "Titillium Web", sans-serif;
 }
 
 .conteiner {
@@ -47,16 +51,16 @@ a {
 
 .conteiner-boasVindas {
     display: flex;
-    justify-content: center; 
-    align-items: center;    
-    height: 75vh; 
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
 
 }
 
 .conteiner-formatacao {
     display: flex;
-    justify-content: center; 
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     padding: 30px;
 }
@@ -76,35 +80,38 @@ a {
     gap: 15px;
 }
 
-
-.conteiner-galeria-1 {
+.galeria {
     display: flex;
-    justify-content: center; 
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     flex-direction: column;
-    height: 100vh;
+    gap: 20px;
 }
 
-.conteiner-galeria-2 {
+.galeria-foto {
     display: flex;
-    justify-content: center; 
-    flex-direction: row;
-    height: 100vh;
+    flex-direction: column;
+    gap: var(--distancia-foto-galeria);
 }
 
-.conteiner-galeria-foto {
-   display: flex;
-   flex-direction: column;
+.galeria-formatacao {
+    display: flex;
+    gap: var(--distancia-foto-galeria);
 }
 
 .titulo {
     color: var(--cor-texto);
     font-size: 50px;
+    font-family: "Rajdhani", sans-serif;
+
 }
 
 .titulo-top {
     color: var(--cor-fenix);
     font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
 }
 
 
@@ -116,14 +123,19 @@ a {
 .texto {
     color: var(--cor-texto);
     font-size: 28px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
 }
 
 .foto {
     border-radius: 20px;
+    max-width: 660px;
+    max-height: 372px;
 }
 
 .foto-galeria {
     border-radius: 20px;
-    width: 70%;
-    gap: 20px;
+    max-width: 533px;
+    max-height: 300px;
+
 }
